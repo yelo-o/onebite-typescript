@@ -20,6 +20,7 @@ sudo npm i -g tsx
 ```
 
 ### 프로젝트에 따라 타입스크립트 설정 다르게 하기
+tsconfig.json 파일 생성 됨
 ```
 tsc --init
 ```
