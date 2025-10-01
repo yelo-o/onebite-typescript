@@ -19,3 +19,10 @@ let doubleArr: number[][] = [
 let tup1: [number, number] = [1, 2];
 
 let tup2: [number, string, boolean] = [1, "2", true];
+
+const users: [string, number][] = [
+    ["이아무개", 1],
+    ["김아무개", 2],
+    ["박아무개", 3],
+    // [4, "최아무개"],
+];
