@@ -22,4 +22,9 @@ let null1: null = null;
 // undefined
 let unde1: undefined = undefined;
 
-let numA: number = null;
+// 리터럴 타입
+// 특정 값만 가질 수 있는 타입
+
+let numA: 10 = 10;
+let strA: "hello" = "hello";
+let boolA: true = true;
