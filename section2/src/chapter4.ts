@@ -17,18 +17,25 @@ let user: User = {
     location: "서울",
 };
 
-let user2: {
-    id: number;
-    name: string;
-    nickname: string;
-    birth: string;
-    bio: string;
-    location: string;
-} = {
-    id: 2,
-    name: "홍길동",
-    nickname: "yelo",
-    birth: "1999-01-01",
-    bio: "안녕하세요",
-    location: "서울",
+// 인덱스 시그니처
+type CountryCodes = {
+    // Korea: string;
+    // UnitedStates: string;
+    // Japan: string;
+    [key: string]: string;
+};
+
+let countryCodes: CountryCodes = {
+    Korea: "ko",
+    UnitedStates: "us",
+    Japan: "jp",
+};
+
+type CountryNumberCodes = {
+    [key: string]: number;
+};
+let countryNumberCodes: CountryNumberCodes = {
+    Korea: 410,
+    UnitedStates: 840,
+    Japan: 392,
 };
