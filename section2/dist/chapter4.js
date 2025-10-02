@@ -13,7 +13,5 @@ let countryCodes = {
 };
 let countryNumberCodes = {
     Korea: 410,
-    UnitedStates: 840,
-    Japan: 392,
 };
 export {};

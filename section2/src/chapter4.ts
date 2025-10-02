@@ -33,9 +33,8 @@ let countryCodes: CountryCodes = {
 
 type CountryNumberCodes = {
     [key: string]: number;
+    Korea: number;
 };
 let countryNumberCodes: CountryNumberCodes = {
     Korea: 410,
-    UnitedStates: 840,
-    Japan: 392,
 };
