@@ -56,3 +56,14 @@ let programmingBook: ProgrammingBook = {
 };
 
 book = programmingBook;
+// programmingBook = book;
+
+/**
+ * 초과 프로퍼티 검사
+ */
+
+let book2: Book = {
+    name: "한 입 크기로 잘라먹는 리액트",
+    price: 33000,
+    // skill: "reactjs",
+};
