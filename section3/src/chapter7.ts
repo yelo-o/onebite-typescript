@@ -7,7 +7,7 @@
 type Person = {
     name: string;
     age: number;
-}
+};
 
 // value => number: toFixed
 // value => string: toUpperCase
@@ -18,13 +18,14 @@ function func(value: number | string | Date | null | Person) {
     // value.toUpperCase();
     // value.toFixed();
 
-    if (typeof value === 'number') {
+    if (typeof value === "number") {
         console.log(value.toFixed());
-    } else if (typeof value === 'string') {
+    } else if (typeof value === "string") {
         console.log(value.toUpperCase());
     } else if (value instanceof Date) {
         console.log(value.getTime());
-    } else if (value && "age" in value) { // 정의한 타입으로 좁힐 때는 'in'연산자 사용
+    } else if (value && "age" in value) {
+        // 정의한 타입으로 좁힐 때는 'in'연산자 사용
         console.log(`${value.name}은 ${value.age}살입니다.`);
     }
 }

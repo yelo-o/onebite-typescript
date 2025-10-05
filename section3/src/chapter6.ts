@@ -5,7 +5,7 @@
 type Person = {
     name: string;
     age: number;
-}
+};
 
 let person = {} as Person;
 person.name = "이아무개";
@@ -14,13 +14,13 @@ person.age = 27;
 type Dog = {
     name: string;
     color: string;
-}
+};
 
 let dog = {
     name: "돌돌이",
     color: "brown",
-    breed: "진도"
-} as Dog
+    breed: "진도",
+} as Dog;
 
 /**
  * 타입 단언의 규칙
@@ -44,7 +44,7 @@ let num4 = 10 as const; // let을 const로 바꾸는 효과
 
 let cat = {
     name: "야옹이",
-    color: "yellow"
+    color: "yellow",
 } as const;
 
 // cat.name = '멍멍이'; // 프로퍼티를 readonly로 변경 시킴(수정 불가)
@@ -59,9 +59,9 @@ type Post = {
 };
 
 let post: Post = {
-    title: '게시글1',
-    author: "이아무개"
-}
+    title: "게시글1",
+    author: "이아무개",
+};
 
 // const len: number = post.author?.length;
 const len: number = post.author!.length; // author라는 값이 있다고 타입스크립트가 믿도록 함
