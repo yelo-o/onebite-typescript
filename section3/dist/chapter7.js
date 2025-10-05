@@ -1,0 +1,26 @@
+/**
+ * 타입 좁히기
+ * 조건문 등을 이용해 넓은 타입에서 좁은 타입으로
+ * 타입을 상황에 따라 좁히는 방법
+ */
+// value => number: toFixed
+// value => string: toUpperCase
+// value => Date: getTime
+// value => Person: name은 age살 입니다.
+function func(value) {
+    // value;
+    // value.toUpperCase();
+    // value.toFixed();
+    if (typeof value === 'number') {
+        console.log(value.toFixed());
+    }
+    else if (typeof value === 'string') {
+        console.log(value.toUpperCase());
+    }
+    else if (value instanceof Date) {
+        console.log(value.getTime());
+    }
+    else if (value && "age" in value) { // 정의한 타입으로 좁힐 때는 'in'연산자 사용
+        console.log("".concat(value.name, "\uC740 ").concat(value.age, "\uC0B4\uC785\uB2C8\uB2E4."));
+    }
+}
