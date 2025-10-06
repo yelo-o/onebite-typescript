@@ -65,5 +65,5 @@ type Func2 = (a: number) => void;
 let func1: Func1 = (a, b) => {};
 let func2: Func2 = (a) => {};
 
-func1 = func2;
-func2 = func1;
+func1 = func2; // 할당하려고 하는 함수타입의 매개변수의 개수가 적을때에만 호환 가능
+// func2 = func1;
