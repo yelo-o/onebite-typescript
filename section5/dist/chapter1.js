@@ -6,4 +6,10 @@ const dog = {
     color: "",
     isBark: true,
 };
+const dogCat = {
+    name: "",
+    color: "",
+    isBark: true,
+    isScratch: true,
+};
 export {};

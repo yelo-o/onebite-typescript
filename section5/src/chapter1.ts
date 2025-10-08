@@ -21,9 +21,18 @@ const dog: Dog = {
 };
 
 interface Cat extends Animal {
-    name: string;
+    isScratch: true;
 }
 
 interface Chicken extends Animal {
-    name: string;
+    isFly: true;
 }
+
+interface DogCat extends Dog, Cat {}
+
+const dogCat: DogCat = {
+    name: "",
+    color: "",
+    isBark: true,
+    isScratch: true,
+};
